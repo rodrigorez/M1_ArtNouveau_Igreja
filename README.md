@@ -91,3 +91,5 @@ Tag representa a raiz de um documento HTML.
 #### [em](https://www.w3schools.com/tags/tag_em.asp)
 
 #### [ul](https://www.w3schools.com/tags/tag_ul.asp)
+
+#### [<!-- texto -->](https://www.w3schools.com/tags/tag_comment.asp)
