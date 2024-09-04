@@ -1,4 +1,4 @@
-# artNouveauM1_Igreja
+# m1_ArtNouveau_Igreja
 
 # Projeto
 
