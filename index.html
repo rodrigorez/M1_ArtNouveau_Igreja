@@ -2,45 +2,54 @@
 <html>
 <head>
 <style>
-#customers {
-  font-family: Arial, Helvetica, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #ffe3b3;
+  border: none;
+  color: #c69e21;
+  text-align: center;
+  font-size: 28px;
+  padding: 25px;
+  width: 308px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
 }
 
-#customers td, #customers th {
-  border: 1px solid #ddd;
-  padding: 8px;
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
 }
 
-#customers tr:nth-child(even){background-color: #f2f2f2;}
-
-#customers tr:hover {background-color: #ddd;}
-
-#customers th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
-  background-color: #de1a52;
-  color: white;
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
 }
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
 </style>
 <title>Page Title</title>
 </head>
 <body>
 <a href="default.asp">
-  <img src="https://postimg.cc/MccFPWcS" alt="HTML tutorial">
+  <img src="https://i.postimg.cc/0NZ1NjPb/Design-sem-nome-9.png" alt="HTML tutorial">
 </a>
-<table id="customers">
-  <tr>
-    <th>Horários de Missas</th>
-    <th></th>
-  </tr>
-  <tr>
-    <td>Domingo</td>
-    <td>07h30, 09h30 e 19h00</td>
-  </tr>
-  <tr>
-    <td>Terça-feira</td>
-    <td>20h00</td>
-  </tr>
+<button class="button" style="vertical-align:middle"><span>Missas </span></button>
+<button class="button" style="vertical-align:middle"><span>Corpo </span></button>
+<button class="button" style="vertical-align:middle"><span>Fotos </span></button>
+<button class="button" style="vertical-align:middle"><span>Curiosidades </span></button>
