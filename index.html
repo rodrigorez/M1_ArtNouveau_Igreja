@@ -1,77 +1,159 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-<style>
-body {
-background-color: #ffe3b3;}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre a Paróquia</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-image: url('https://i.postimg.cc/pdMf1FC2/Pag-igreja-3.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed; /* Faz com que a imagem fique fixa enquanto rola a página */
+        }
 
-.container {
-  display: flex; /* Enables CSS flexbox */
-  justify-content: center; /* Centers horizontally */
-  align-items: center; /* Centers vertically */
-  height: 10%; /* Full height to demonstrate vertical centering */}
+        /* Container flexbox para os botões */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+        }
 
-button {
-  display: inline-block;
-  border-radius: 4px;
-  background-color: #ffe3b3;
-  border: 2px solid #c69e21;
-  color: #c69e21;
-  text-align: center;
-  font-size: 150%;
-  padding: 2%;
-  width: 23%;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 0.5%;
-  float: center;}
+        /* Estilos dos botões */
+        button {
+            display: inline-block;
+            border-radius: 4px;
+            background-color: #ffe3b3;
+            border: 2px solid #c69e21;
+            color: #c69e21;
+            text-align: center;
+            font-size: 150%;
+            padding: 2%;
+            width: 23%;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 0.5%;
+        }
 
-.button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
+        .button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
 
-.button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: 20px;
-  transition: 0.5s;
-}
+        .button span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: 20px;
+            transition: 0.5s;
+        }
 
-.button:hover span {
-  padding-right: 25px;
-}
+        .button:hover span {
+            padding-right: 25px;
+        }
 
-.button:hover span:after {
-  opacity: 1;
-  right: 0;
-}
+        .button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
 
-b {
-  padding: -10%;
-  border: 1px solid #4CAF50;
-}
+        /* Estilos principais do conteúdo da paróquia */
+        .content {
+            width: 80%;
+            margin: 20px auto;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
 
-</style>
-<title>Page Title</title>
+        h1 {
+            text-align: center;
+            color: #3d85c6;
+        }
+
+        h2 {
+            color: #6a3d9a;
+            margin-top: 40px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .prayer {
+            background-color: #e8c33c;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+
+        .prayer p {
+            margin: 0;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
+
+<!-- Logo -->
 <a href="default.asp">
   <img src="https://i.postimg.cc/0NZ1NjPb/Design-sem-nome-9.png" width="100%"> 
 </a>
-<div class="container">
-<button class="button" style="vertical-align:middle"><span>Missas </span></button>
-<button class="button" style="vertical-align:middle"><span>Corpo </span></button>
-<button class="button" style="vertical-align:middle"><span>Fotos </span></button>
-<button class="button" style="vertical-align:middle"><span>Curiosidades </span></button></div>
-<a href="default.asp">
 
-<div class="b">
-  <img src="https://i.postimg.cc/W4WBw5NF/Pag-igreja-1.jpg" width="100%"> 
-  </div>
-</a>
+<!-- Botões -->
+<div class="container">
+    <button class="button" style="vertical-align:middle"><span>Missas </span></button>
+    <button class="button" style="vertical-align:middle"><span>Corpo </span></button>
+    <button class="button" style="vertical-align:middle"><span>Fotos </span></button>
+    <button class="button" style="vertical-align:middle"><span>Curiosidades </span></button>
+</div>
+
+<!-- Conteúdo principal sobre a paróquia e Santo Antônio -->
+<div class="content">
+    <h1>Sobre a Paróquia</h1>
+    <div class="section">
+        <p>A Paróquia Santo Antônio da Vila Ré está localizada no bairro Vila Ré, em São Paulo. Sua história é rica e reflete o crescimento e as transformações do bairro ao longo dos anos.</p>
+        <p>A paróquia foi oficialmente fundada em 22 de janeiro de 1960, e sua criação foi uma resposta ao crescimento populacional da região, que demandava a presença de uma igreja local para atender as necessidades espirituais e comunitárias dos habitantes. A área da Vila Ré, na época, estava se expandindo rapidamente, e a presença de uma paróquia local tornou-se essencial para o desenvolvimento da comunidade.</p>
+        <p>O nome da paróquia é uma homenagem a Santo Antônio de Pádua, um dos santos mais venerados da Igreja Católica, conhecido por seu trabalho com os pobres e necessitados, além de ser um patrono dos casamentos e das causas por coisas perdidas.</p>
+        <p>A construção da igreja foi um projeto significativo para a comunidade, envolvendo a colaboração de muitos fiéis e moradores locais. A paróquia começou com um pequeno grupo de fiéis e, ao longo dos anos, cresceu para se tornar um centro vibrante de fé e atividades comunitárias.</p>
+        <p>Além das missas e cerimônias religiosas, a paróquia se envolve em diversas atividades sociais e educacionais ao longo dos anos. A igreja frequentemente organiza eventos comunitários, programas para jovens, grupos de apoio e atividades de caridade, refletindo o espírito de serviço e solidariedade que Santo Antônio representa.</p>
+        <p>Hoje, a Paróquia Santo Antônio da Vila Ré continua a desempenhar um papel importante na vida espiritual e social da comunidade. A igreja é um ponto de encontro para os moradores, oferecendo não apenas um espaço para a prática religiosa, mas também um local onde as pessoas podem se unir em torno de projetos comunitários e eventos sociais.</p>
+    </div>
+
+    <div class="section">
+        <h2>Sobre o Santo Antônio</h2>
+        <p>Santo Antônio de Pádua, também conhecido como Santo Antônio de Lisboa, é um dos santos mais venerados da Igreja Católica. Sua história é fascinante e repleta de feitos milagrosos, e ele é especialmente conhecido por sua ajuda aos pobres e pela sua eloquência como pregador.</p>
+        <p>Nascido como Fernando de Bulhões e Taveira Azevedo em 15 de agosto de 1195, em Lisboa, Portugal, Santo Antônio demonstrou desde jovem uma grande inclinação para a vida religiosa. Aos 15 anos, ingressou na Ordem de Santo Agostinho em Coimbra, onde recebeu uma educação sólida e começou a se dedicar ao estudo das Escrituras e à vida monástica.</p>
+        <p>O ponto de virada em sua vida ocorreu em 1220, quando Santo Antônio conheceu os primeiros franciscanos que passavam por Coimbra. Inspirado pelo ideal de vida pobre e humilde pregado por São Francisco de Assis, ele decidiu se juntar à Ordem dos Frades Menores, trocando seu nome de Fernando por Antônio.</p>
+        <p>Santo Antônio logo se destacou como pregador. Ele foi designado para várias regiões da Itália, incluindo Pádua, onde se tornou famoso por sua habilidade em pregar e ensinar. Seus sermões eram conhecidos por sua clareza e profundidade, e ele conseguiu converter muitos através de sua eloquência e capacidade de tocar o coração das pessoas.</p>
+        <p>Além de ser um grande pregador, Santo Antônio realizou muitos milagres durante sua vida, incluindo a famosa história da pregação para peixes, em um momento em que a população estava cética sobre suas mensagens. Os peixes teriam saído da água para ouvir sua pregação, um sinal de que até mesmo as criaturas de Deus reconheciam sua reputação como santo.</p>
+        <p>Santo Antônio morreu em 13 de junho de 1231, com apenas 36 anos, em Arcella, perto de Pádua, na Itália. Menos de um ano após sua morte, ele foi canonizado pela Igreja Católica devido ao grande número de milagres atribuídos a ele. Santo Antônio é conhecido como o santo dos objetos perdidos e continua a interceder em favor daqueles que procuram ajuda.</p>
+    </div>
+
+    <div class="section">
+        <h2>Oração a Santo Antônio</h2>
+        <div class="prayer">
+            <p>Ó Santo Antônio, o mais gentil dos santos, teu amor a Deus e tua caridade com suas criaturas, fizeram com que fosses digno de possuir poderes miraculosos.</p>
+            <p>Ó maravilha por este pensamento, peço que... (formule o pedido).</p>
+            <p>Ó gentil e amado Santo Antônio, cujo coração sempre esteve cheio de simpatia humana, sussurra ao ouvido de Jesus o desejo que confiadamente faço a vós.</p>
+            <p>Ó glorioso santo, uma palavra tua me concederá a graça que tanto desejo. Amém.</p>
+        </div>
+    </div>
+</div>
+
 </body>
+</html>
